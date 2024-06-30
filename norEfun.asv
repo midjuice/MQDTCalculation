@@ -1,0 +1,19 @@
+function [psi,sumPsi] = norEfun(Es,element,channel,B,ll,gJ)
+rsize = 1000;
+rs = linspace(0.01,1.07,rsize);
+psi = zeros(5,rsize);
+
+for i = 1:length(rs)
+    psi(:,i) = ZeroEfun(Es,element,channel,B,ll,gJ,rs(i));
+end
+
+psiSq = psi .* psi;
+sumPsi = sum(psiSq,2);
+
+sum
+
+
+
+end
+
+

@@ -1,0 +1,10 @@
+clear
+
+
+rsize = 1000;
+rs = linspace(0.01,1.07,rsize);
+Bs = [50,100,150,178,200,250];
+for i = 1:length()
+[psi,sum1] = norEfun(0,'Li6','ab',200,1,2.003);
+
+sumpsi = sum(sum1);
